@@ -6,7 +6,7 @@
 <!DOCTYPE>
 <html>
 <head>
-<title>添加用户</title>
+<title>主页</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <!-- 为了让 Bootstrap 开发的网站对移动设备友好，确保适当的绘制和触屏缩放，需要在网页的 head 之中添加 viewport meta 标签 -->
@@ -31,55 +31,9 @@ var path='<%=path%>';
 	<div class = "row" style ="height:50px;background-color:#46A3FF;"> 		
 	</div>	
 	<br>
-	<form class="bs-example bs-example-form" role="form" method="post" action="<%=path%>/user/addUser">
-
-		<!-- 账号-->
-		<div class="row">	
-			<div class="col-lg-3 col-md-3 col-sm-3 "></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 ">
-			<div class="input-group input-group-lg">				
-				<span class="input-group-addon">账号</span>
-			 	<input type="text" class="form-control" placeholder="请输入用户名" name="userAccount">
-			 </div>
-			 </div>
-			 <div class="col-lg-3 col-md-3 col-sm-3 "></div>
-			 <div class="col-lg-3 col-md-3 col-sm-3 "></div>
-		  </div>
-		   <br>
-		  
-		  <!-- 密码-->
-		<div class="row">	
-			<div class="col-lg-3 col-md-3 col-sm-3 "></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 ">
-			<div class="input-group input-group-lg">				
-				<span class="input-group-addon">密码</span>
-			 	<input type="text" class="form-control" placeholder="请输入密码" name="userPassword">
-			 </div>
-			 </div>
-			 <div class="col-lg-3 col-md-3 col-sm-3 "></div>
-			 <div class="col-lg-3 col-md-3 col-sm-3 "></div>
-		  </div>
-		   <br>
-		   
-		     <!-- 密码-->
-		<div class="row">	
-			<div class="col-lg-3 col-md-3 col-sm-3 "></div>
-			<div class="col-lg-3 col-md-3 col-sm-3 ">
-			<div class="input-group input-group-lg">					
-			 	<input type="submit" class="btn-lg btn-success" value= "添加用户" id="submitData">
-			 </div>
-			 </div>
-			 <div class="col-lg-3 col-md-3 col-sm-3 "></div>
-			 <div class="col-lg-3 col-md-3 col-sm-3 "></div>
-		  </div>
-		   <br>
-	
-	
-	
-	
-	
-	
-	</form>
+	<div class = "row test-center">
+		<h1> This is a main page!</h1>
+	</div>
 	</div>
 	
 	<!-- 这两个文件放入HTML网页的最底部，这么做的原因是为了防止网页未加载完毕而这两个文件先加载可能产生的不必要的问题 -->

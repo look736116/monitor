@@ -16,7 +16,7 @@
 <!-- 引入 Bootstrap 核心 CSS 文件 -->
 <link 	href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <!-- 引入自定义的 css文件 -->
-<link href="<%=path%>/css/login.css" rel="stylesheet">
+<link href="<%=path%>/css/addUser.css" rel="stylesheet">
 
 <!-- 添加网站图标 网站图标生产网站：http://bitbug.net/ -->
 <link rel="shortcut icon" href="<%=path%>/img/favicon.ico" />
@@ -39,7 +39,7 @@ var path='<%=path%>';
 			<div class="col-lg-3 col-md-3 col-sm-3 ">
 			<div class="input-group input-group-lg">				
 				<span class="input-group-addon">账号</span>
-			 	<input type="text" class="form-control" placeholder="请输入用户名" name="userAccount">
+			 	<input type="text" class="form-control" placeholder="请输入用户名" name="userName" id="userName">
 			 </div>
 			 </div>
 			 <div class="col-lg-3 col-md-3 col-sm-3 "></div>
@@ -53,8 +53,9 @@ var path='<%=path%>';
 			<div class="col-lg-3 col-md-3 col-sm-3 ">
 			<div class="input-group input-group-lg">				
 				<span class="input-group-addon">密码</span>
-			 	<input type="text" class="form-control" placeholder="请输入密码" name="userPassword">
-			 </div>
+			 	<input type="text" class="form-control" placeholder="请输入密码" name="userPassword" id="userPassword">
+			 </div>			 
+			 
 			 </div>
 			 <div class="col-lg-3 col-md-3 col-sm-3 "></div>
 			 <div class="col-lg-3 col-md-3 col-sm-3 "></div>
@@ -66,7 +67,7 @@ var path='<%=path%>';
 			<div class="col-lg-3 col-md-3 col-sm-3 "></div>
 			<div class="col-lg-3 col-md-3 col-sm-3 ">
 			<div class="input-group input-group-lg">					
-			 	<input type="submit" class="btn-lg btn-success" value= "添加用户" id="submitData">
+			 	<input type="submit" class="btn-lg btn-success" value= "安全登录" id="submitData">
 			 </div>
 			 </div>
 			 <div class="col-lg-3 col-md-3 col-sm-3 "></div>
@@ -74,7 +75,9 @@ var path='<%=path%>';
 		  </div>
 		   <br>
 	
-	
+		<div class = "row text-center"> <h5>${result}</h5></div>
+		<input type = "text" value ="test" id="myVal">
+		<p class="msg" id="msg">5555</p>
 	
 	
 	
@@ -91,6 +94,6 @@ var path='<%=path%>';
 		src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<!-- 引入外部自定义的js 文件 -->
-	<script src="<%=path%>/js/login.js"></script>
+	<script src="<%=path%>/js/addUser.js"></script>
 </body>
 </html>
